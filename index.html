@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container todo-container">
+        <h3 class="text-center todo-header">To Do List</h3>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="new-task-input" placeholder="Add a new task">
+            <div class="input-group-append">
+                <button class="btn btn-success" type="button" id="add-task-btn">Add Task</button>
+                <!-- Nút để xóa tất cả nhiệm vụ đã chọn -->
+                <button id="delete-selected-btn" class="btn btn-danger btn-sm">Delete All</button>
+            </div>
+        </div>
+        <div id="todo-list">
+            <!-- Nhiệm vụ sẽ được thêm vào đây một cách linh hoạt -->
+        </div>
+    </div>
+    <!-- Bootstrap JS và các phụ thuộc -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
